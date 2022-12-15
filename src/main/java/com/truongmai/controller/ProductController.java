@@ -17,8 +17,8 @@ import java.util.Map;
 public class ProductController {
     private final IProductService productService = new ProductService();
 
-    @GetMapping("")
-    public ModelAndView index(String keyword) {
+    @GetMapping
+    public ModelAndView index(@RequestParam(value = "k", required = false) String keyword) {
         ModelAndView modelAndView = new ModelAndView("index");
         List<Product> products;
         if (keyword == null) {

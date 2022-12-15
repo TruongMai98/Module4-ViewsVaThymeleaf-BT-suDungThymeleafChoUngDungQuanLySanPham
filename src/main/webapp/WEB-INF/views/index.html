@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="ve">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -11,9 +11,9 @@
     </a>
 </i>
 <div>
-    <form action="#" method="get">
+    <form th:action="@{/products}" method="get">
         <div>
-            <input type="search" name="keyword" placeholder="search......">
+            <input type="search" name="k" placeholder="search......">
         </div>
         <div>
             <input type="submit" value="search">
